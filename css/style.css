@@ -1,0 +1,139 @@
+:root {
+    --background-color: #E5E5E5;
+    --main-color: #131313;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+    min-width: 1600px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    color: var(--main-color);
+    font-weight: 400;
+    line-height: 150%;
+    background-color: var(--background-color);
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* Буквица */
+
+span {
+    font-family: 'Caveat', cursive;
+    font-size: 70px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.header-nav {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    min-height: 80px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: end;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-item {
+    margin-right: 35px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Основное содержимое */
+
+.main {
+    padding-top: 80px;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-rows: 1fr auto auto auto auto;
+    gap: 50px 40px;
+}
+
+.article-container {
+    width: 536px;
+}
+
+.article-title {
+    font-size: 48px;
+    line-height: 130%;
+    color: var(--main-color);
+}
+
+.article-lead {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.article-text-first {
+    margin-top: 50px;
+}
+
+.article-img-big {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    margin-top: 35px;
+}
+
+.article-img-second {
+    margin-top: 20px;
+}
+
+.article-img-single {
+    margin-top: 20px;
+}
+
+.article-text-smaller {
+    line-height: 140%;
+}
+
+.article-img-full {
+    grid-column: span 3;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.footer-copyright {
+    justify-self: end;
+}
